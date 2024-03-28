@@ -1,0 +1,48 @@
+<!--Align items: This property is used to align the flex containers items along the cross-axis, which is perpendicular to the main axis.-->
+
+<!--align content: It is utilized to adjust the spacing between flex lines within a flex container, particularly when there is extra space along the cross-axis-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Align items</title>
+    <style>
+        .content{
+            height: 80px;
+            width: 80px;
+            border: 5px solid rebeccapurple;
+            background-color: darkcyan;
+            margin: 10px;
+        }
+         #container{
+        height: 550px;
+        width: 550px;
+        background-color: gainsboro;
+        border: 5px solid ;
+        display: flex;
+        flex-direction: row;
+
+        flex-wrap: wrap;
+        justify-content: center;/*justify-content(main-axis[left to right])*/
+        align-items: center;/*align-items(cross-axis[top to bottom]): center, end, start*/
+        align-content: center;/*fix spacing between items.*/
+        }
+
+    </style>
+</head>
+<body>
+    <h2>Flex container:</h2>
+    <div id="container">
+        <div class ="content">flex item 1</div>
+        <div class ="content">flex item 2</div>
+        <div class ="content">flex item 3</div>
+        <div class ="content">flex item 4</div>
+
+        <div class ="content">flex item 5</div>
+        <div class ="content">flex item 6</div>
+        
+
+
+    </div>
+    
+</body>
+</html>

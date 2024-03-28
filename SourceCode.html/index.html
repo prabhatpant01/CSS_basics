@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Color property</title>
+    <link rel="stylesheet" href="index.css"> <!--external styling ka link(third priority)-->
+    <style>
+        div h2{ /*descendant selector*/
+            color: red; /*internal styling   ---jb head kai under style define krte hai(second priority*/
+        }
+        p{
+            color: blueviolet;
+        }
+        #heading3{
+            color:purple;
+        }
+        .para1,.para2{
+            color: darkorange;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>MY NEW CSS PROJECT</h1>
+        <div><h2>prabhat pant</h2></div>
+        <hr>
+        <p>hello friends welcome back (●'◡'●)
+            <p style="color: chartreuse;">to kse hai aap sabhi loog</p>   <!--inline styling-- jb body kai under style define krte hai (first priority)  -->
+        </p>
+        <h3 id="heading3">This is prabhat pant</h3>
+        <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <p class="para2">Lorem ipsum dolor sit amet.</p>
+    </header>
+</body>
+</html>

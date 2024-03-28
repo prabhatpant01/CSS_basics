@@ -1,0 +1,43 @@
+<!--CSS Transition is a property that enables smooth animation between changes in CSS property values
+1. Transition-property: defines which CSS properties will transition.
+2. Transition-duration: sets how long the transition lasts.
+3. Transition-timing-function: Controls the speed curve of the transition.
+4. Transition-delay: specifies a delay before the transition starts.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transitions</title>
+    <style>
+        #button{
+            background-color: aqua;
+            height:40px;
+            width:200px;
+            border: 3px solid;
+            border-radius: 15px;
+
+            transition-property: all;
+            transition-duration: 1s;
+            transition-timing-function: linear;/*ease-in-out, steps()....*/
+            transition-delay: 0s;
+
+            /* transition: all 1s linear 0s; */
+        }
+        #button:hover{
+            height: 30px;
+            width: 180px;
+            background-color: rgb(99, 223, 71);
+            border: 3px solid red;
+        }
+        #button:active{
+            background-color: blue;
+            border: 3px solid;
+        }
+    </style>
+</head>
+<body>
+    <div id="button">
+        click me(transition button)
+    </div>
+    
+</body>
+</html>

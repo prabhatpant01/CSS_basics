@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Shrink properties</title>
+    <style>
+        #container{
+            height: 300px;
+            width: 400px;
+            border: 5px solid rebeccapurple;
+            background-color: rgb(192, 248, 107);
+            display: flex;
+            justify-content: center;
+        }
+        #item1,#item2,#item3,#item4{
+            height: 50px;
+            width: 50px;
+            border: 5px solid;
+            margin: 5px;
+            background-color: blueviolet;
+        }
+        #item3{
+            /*flex-shrink: 2;flex-shrink: The "flex-shrink" property in CSS determines how much a flex item will shrink relative to other items in the flex container if there is insufficient space........... 1 is default */
+
+            flex-grow: 2;/*flex-grow: The flex-grow property in CSS specifies how much a flex item will grow to other relative to other items in the flex container when additional space is available.*/
+        } 
+    </style>
+</head>
+<body>
+    <h1>flex container</h1>
+    <div id="container">
+        <div id="item1">flex item 1</div>
+        <div id="item2">flex item 2</div>
+        <div id="item3">flex item 3</div>
+        <div id="item4">flex item 4</div>
+    </div> 
+</body>
+</html>

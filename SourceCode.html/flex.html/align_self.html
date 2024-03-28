@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>align items properties</title>
+    <style>
+         h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    #container{
+        position:  relative;
+        left: 550px;
+        height: 400px;
+        width: 400px;
+        background-color: lightcyan;
+        border: 5px solid blueviolet;
+
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        align-items: end;
+    }
+    .flexbox{
+        height: 60px;
+        width: 60px;
+        margin: 8px;
+        border: 5px dashed red;
+    }
+
+    #one{background-color: aquamarine; 
+        align-self: flex-start;}/*align-self: allows individual flex items to override the container's align-items property, aligning them differently along the cross-axis*/
+
+    #two{background-color: chocolate;}
+    #three{background-color: darkmagenta;}
+
+    #four{background-color: darkkhaki ;
+         align-self: center;}
+
+    </style>
+
+</head>
+<body>
+    <h1>flex container:</h1>
+  <div id="container">
+    <div id="one" class="flexbox">flex item 1</div>
+    <div id="two" class="flexbox">flex item 2</div>
+    <div id="three" class="flexbox">flex item 3</div>
+    <div id="four" class="flexbox">flex item 4</div>
+</body>
+</html>

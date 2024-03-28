@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Positions property</title>
+    <style>
+        .box{
+            background-color: rgb(81, 220, 76);
+            margin: 10px;
+            height: 100px;
+            width: 100px;
+        }
+        #box1{
+            position: static;/*static:(default) element follow the normal document flow(top,right,bottom,left)*/
+        }
+        #box2{
+            position: relative;/*relative: Elements positions adjusted from its normal position*/
+            top: 15px;
+            left: 15px;
+        } 
+        #box3{
+            position: absolute;/*absolute: Position elements relative to the relative positioned ancestors.*/
+            top: 15px;
+        }  
+        #box4{
+            position: fixed;/*fixed: Elements positioned relative to the viewport, doesn't move on scroll*/
+        } 
+        .axis1, .axis2{
+            height: 100px;
+            width: 100px;
+            background-color: greenyellow;
+            margin: 10px;
+            font-size: 25px;
+            position:absolute;
+        }
+        .axis1{
+            z-index: 1;
+            left: 20px;
+            bottom: 60px;
+        }
+        .axis2{
+            z-index: 2;
+            left: 60px;
+            bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div id="box1" class="box">box 1</div>
+    <div id="box2" class="box">box 2</div>
+    <div id="box3" class="box">box 3</div>
+    <div id="box4" class="box">box 4</div>
+
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+    <div class="box">box</div>
+
+    <div class="axis1">z-index 1</div>
+    <div class="axis2">z-index 2</div>
+
+
+    
+</body>
+</html>

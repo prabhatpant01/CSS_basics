@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>flex properties:</title>
+    <style>
+        h1{
+            text-align: center;
+            text-decoration: underline;
+        }
+        #container{
+            position:  relative;
+            left: 550px;
+            height: 400px;
+            width: 400px;
+            background-color: lightcyan;
+            border: 5px solid blueviolet;
+
+            display: flex;
+            flex-wrap: wrap;/*flex-wrap:no-wrap,wrap, wrap-reverse*/
+        }
+        .flexbox{
+            height: 60px;
+            width: 60px;
+            margin: 8px;
+            border: 5px dashed red;
+        }
+        #one{background-color: aquamarine;}
+        #two{background-color: chocolate;}
+        #three{background-color: darkmagenta;}
+        #four{background-color: darkkhaki ;}
+        #five{background-color: lime;}
+        #six{background-color: darksalmon;}
+        #seven{background-color: hotpink;}
+        #eight{background-color: lavenderblush;}
+        #nine{background-color: rgb(8, 101, 118);}
+        #ten{background-color: lightgreen;}
+
+    </style>
+</head>
+<body>
+    <h1>flex container:</h1>
+    <div id="container">
+        <div id="one" class="flexbox">flex item 1</div>
+        <div id="two" class="flexbox">flex item 2</div>
+        <div id="three" class="flexbox">flex item 3</div>
+        <div id="four" class="flexbox">flex item 4</div>
+        <div id="five" class="flexbox">flex item 5</div>
+
+        <div id="six" class="flexbox">flex item 6</div>
+        <div id="seven" class="flexbox">flex item 7</div>
+        <div id="eight" class="flexbox">flex item 8</div>
+        <div id="nine" class="flexbox">flex item 9</div>
+        <div id="ten" class="flexbox">flex item 10</div>
+    </div>
+    
+</body>
+</html>

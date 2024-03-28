@@ -1,0 +1,33 @@
+<!--1.usage: Adds an image as a background to elements.
+2.syntax: Defined using background-image: url('path/to/image')
+3.repetition:Control image repetition using background-repeat.
+4.positioning:Adjust image position using background-position.
+5.size-control: Manipulate image size using background-size
+6.background-attachment: Sets whether the background image scrolls with the element or remains fixed.
+7.Shorthand(color, image, repeat, attachment, position) -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Background</title>
+    <style>
+       *{margin: 0%; padding: 0%;} 
+    div p{
+        background-color: blueviolet;   
+    }
+    #box{ background-image: url(images/RamSita.jpg);
+        height: 100px;width: 100px;
+        background-size: contain;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-blend-mode: hue;
+    }
+    </style>
+
+</head>
+<body>
+    <div style="color: black;"><p>change Background color</p></div>
+    <div id="box"></div>
+</body>
+</html>

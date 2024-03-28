@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>font</title>
+    <style>
+        header{
+            font-size: large;/*font-size: also define in pixels*/
+            font-weight: 900;/*font-weight: 100 to 900 (thickness)*/
+        }
+        #first{font-style: italic;}
+        #second{font-style: oblique;font-size: 25px;}
+
+        #third{font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;} /*'Gill Sans MT' and so on.... all are fallback mechanism*/
+        #fourth{font-family: Arial, Helvetica, sans-serif;} 
+    </style>
+</head>
+<body>
+    <header> This is my header line </header>
+    <main>
+        <p id="first">this is my first sentence.</p>
+        <p id="second">this is my second sentence</p>
+        <p id="third">this is my third sentence- using font family and we also link another font in many website</p>
+        <p id="fourth">this is my forth sentence- using font family</p>
+    </main>
+    
+</body>
+</html>

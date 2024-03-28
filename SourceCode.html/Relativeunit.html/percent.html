@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Relative units:px,%,em,rem</title>
+    <style>
+        *{
+            margin: 0; padding: 0;
+            font-size: 15px;
+        }
+        #first{
+            height: 160px;
+            width: 160px;
+            background-color: chartreuse; 
+            font-size: 20px;
+        }
+        #contain{
+            height: 80%; /*percentage- it is relative to parent height*/
+            width: 80%;
+            background-color: darkmagenta;
+            /*font-size: 2em;/*em: font size of a parent*/
+            font-size: 2rem;/*rem: font size of a root element*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Body text</h1> 
+    <div id="first">first BOX
+        <div id="contain">contain Box</div>    
+    </div>
+</body>
+</html>

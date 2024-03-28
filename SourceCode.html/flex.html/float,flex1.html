@@ -1,0 +1,87 @@
+<!--flexbox is a one dimensional layout method for arranging items in rows or columns. Items flex(expand) to fill additional space or shrink to fit into smaller spaces.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Another properties</title>
+    <style>
+        h1{text-align: left;
+        font-style: italic;
+        text-transform: capitalize;
+        text-decoration-line: underline;
+        color: brown;
+        text-decoration-color: blueviolet;}
+
+        #container{
+            background-color: rgb(193, 189, 189);
+            border: 5px solid red;
+            height: 400px;
+            width: 400px;
+            padding: 10px;
+
+            display: flex;
+            flex-direction: row-reverse;/*flex direction: row, row-reverse, column, column-reverse*/
+        }
+        .box{
+            background-color: rgb(126, 157, 71);
+            margin: 5px;
+            height: 60px;
+            width: 50px;
+        }
+
+        #container2{
+            background-color: darkseagreen;
+            height: 200px;
+            width: 200px;
+            border: 5px solid black;
+            margin: 10px;
+        }
+        #box1{
+            background-color: blueviolet;
+            height: 50%;
+            width: 50%;
+            margin: 10px;
+            float: right;
+        }
+        #container3{
+        height: 550px;
+        width: 550px;
+        background-color: gainsboro;
+        border: 5px solid ;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;/*justify content: flex-start, flex-end, center, space-between, space-around, space-evenly. move into main axis(X-axis)*/
+    
+        }
+        .content{
+            height: 100px;
+            width: 100px;
+            border: 5px solid rebeccapurple;
+            background-color: darkcyan;
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>flex container:</h1>
+    <div id="container">
+        <div class="box">Flex item 1</div>
+        <div class="box">Flex item 2</div>
+        <div class="box">Flex item 3</div>
+        <div class="box">Flex item 4</div>
+        <div class="box">Flex item 5</div>
+    </div>
+
+    <h2 style="text-align: left;">Using float:</h2>
+    <div id="container2">
+        <div id="box1">float box 👈left to right here</div>
+    </div>
+
+    <h2>flex properties:</h2>
+    <div id="container3">
+        <div class ="content">flex item 1</div>
+        <div class ="content">flex item 2</div>
+        <div class ="content">flex item 3</div>
+        <div class ="content">flex item 4</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!--1.Animation-name: Specifies the name of the @keyframes defined animation
+2.Animation-duration: Defines the total time the animation takes to complete one cycle.
+3.Animation-timing-function: Controls the pacing of the animation(e.g, linear, ease-in).
+4.Animation-delay:Sets a delay before the animation starts, allowing for a pause before initiation.
+5.Animation-iteration-count: Indicates the number of times the animation should repeat.
+6.Animation-direction: Specifies the direction of the animation, allowing for reverse or alternate cycles.   
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Animation</title>
+    <style>
+        #animate_box{
+            height: 100px;
+            width: 100px;
+            border: 3px solid;
+            border-radius: 10px;
+            background-color: dodgerblue;
+
+            display: flex;
+            position: relative;
+            top: 100px;
+            left: 100px;
+
+            animation-name: ghumakad;
+            animation-duration: 1s;
+            animation-timing-function: ease-in-out;
+            animation-delay: 1s;
+
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+
+            /* animation: ghumakad 1s       ease-in-out 1s infinite normal; */
+        }
+        @keyframes ghumakad{
+            from{left: 10px;}
+            to{left: 400px;}
+            /* 0%{left: 10px; top:0px}
+            5%{left: 150px; top: 100px}
+            100%{left:300px; top: 0px} */
+        }
+    </style>
+</head>
+<body>
+    <div id="animate_box">Animate</div>
+</body>
+</html>

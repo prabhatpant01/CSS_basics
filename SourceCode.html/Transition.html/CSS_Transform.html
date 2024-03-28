@@ -1,0 +1,72 @@
+<!--transform:Allows modification of element's shape and position
+can perform operations like rotate, scale, skew, translate. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transform property</title>
+    <style>
+        .box{
+            height: 100px;
+            width: 100px;
+            margin: 5px;
+            border-radius: 10px;
+            border: 3px dashed yellow;
+            display: flex;
+            position: relative;
+            left: 200px;
+            transition: all;
+            transition-duration: 1s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0s;
+        }
+
+        #rotate:hover{
+            background-color: blueviolet;
+            justify-content: center;
+            align-items: center;
+
+            transform: rotate(90deg);
+            /* transform: rotatex(90deg);
+            transform: rotatey(90deg); */
+
+        }
+        #scale:hover{
+            background-color: rgb(43, 226, 83);
+            justify-content: center;
+            align-items: center;
+
+            transform: scale(2);
+            /* transform: scale(4);
+            transform: scalex(2);
+            transform: scaley(2); */
+        }
+        #skew:hover{
+            background-color: rgb(226, 43, 76);
+            justify-content: center;
+            align-items: center;
+
+            transform: skew(90deg);
+            /* transform: skew(45deg); */
+
+        }
+        #translate:hover{
+            background-color: rgb(226, 43, 177);
+            justify-content: center;
+            align-items: center;
+
+            transform: translate(50px);
+            /* transform: translate(50px, 50px);/*50px move [x] left than 50px move [y] down*/
+            /* transform: translatex(50px);
+            transform: translatey(50px);  */
+
+        }
+
+    </style>
+</head>
+<body>
+    <div id="rotate" class="box">rotate</div>
+    <div id="scale" class="box">scale</div>
+    <div id="skew" class="box">skew</div>
+    <div id="translate" class="box">translate</div>
+</body>
+</html>
